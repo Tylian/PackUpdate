@@ -1,4 +1,4 @@
-version = '1.0'
+version = '3.0'
 jar {
   manifest {
     attributes 'Main-Class': 'at.chaosfield.packupdate.PackUpdate'
