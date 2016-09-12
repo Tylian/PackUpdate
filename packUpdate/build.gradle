@@ -7,7 +7,6 @@ jar {
 
 dependencies {
   compile 'commons-io:commons-io:2.4'
-  compile 'org.json:json:20151123'
 }
 
 shadowJar {
