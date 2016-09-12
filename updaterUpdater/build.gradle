@@ -1,0 +1,15 @@
+version = '1.0'
+jar {
+  manifest {
+    attributes 'Main-Class': 'at.chaosfield.updaterUpdater.UpdaterUpdater'
+  }
+}
+
+dependencies {
+  compile 'commons-io:commons-io:2.4'
+  compile 'org.json:json:20151123'
+}
+
+shadowJar {
+  baseName = 'UpdaterUpdater'
+}

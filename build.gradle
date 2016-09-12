@@ -1,0 +1,26 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+  }
+}
+
+subprojects {
+  apply plugin: "java"
+  apply plugin: 'com.github.johnrengelman.shadow'
+  repositories {
+    mavenCentral()
+  }
+
+  sourceCompatibility = 1.8
+
+  shadowJar {
+   classifier = null
+   version = null
+  }
+
+  jar.enabled = false
+  build.dependsOn shadowJar
+}
